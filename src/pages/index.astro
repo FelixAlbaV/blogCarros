@@ -3,6 +3,9 @@ import BaseHead from '../components/BaseHead.astro';
 import Footer from '../components/Footer.astro';
 import Header from '../components/Header.astro';
 import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
+
+const nombre = 'Christopher';
+const fechaActual = new Date().toLocaleDateString('es-MX', { year: 'numeric', month: 'long', day: 'numeric' });
 ---
 
 <!doctype html>
@@ -14,6 +17,7 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 		<Header />
 		<main>
 			<h1>🚗 Bienvenido a Blog de Autos</h1>
+			<p>Escrito por <strong>{nombre}</strong> — {fechaActual}</p>
 			<p>
 				Un espacio dedicado a los autos deportivos más emocionantes del mundo.
 				Aquí encontrarás análisis, especificaciones y todo lo que necesitas saber
