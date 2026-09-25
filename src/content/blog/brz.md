@@ -2,7 +2,7 @@
 title: 'Subaru BRZ MT 2026'
 description: 'El deportivo puro de tracción trasera que pone la diversión al volante por encima de todo.'
 pubDate: 'Sep 24 2026'
-heroImage: '/blog-placeholder-3.jpg'
+heroImage: ''
 ---
 
 El Subaru BRZ MT 2026 es la prueba de que no necesitas cientos de caballos para divertirte al volante. Este deportivo de tracción trasera y caja manual es uno de los últimos de su tipo, diseñado para quienes disfrutan la conducción en su forma más pura.

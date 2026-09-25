@@ -2,7 +2,7 @@
 title: 'Porsche 911 Turbo S 2026'
 description: 'El deportivo más refinado del mundo, muy elegante y tecnológico.'
 pubDate: 'Sep 24 2026'
-heroImage: '/blog-placeholder-2.jpg'
+heroImage: ''
 ---
 
 El Porsche 911 Turbo S 2026 es la cúspide de la ingeniería alemana aplicada a los autos deportivos. Después de más de 60 años de evolución continua, el 911 sigue siendo el referente contra el que se miden todos los demás.

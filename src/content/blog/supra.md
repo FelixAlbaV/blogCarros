@@ -2,7 +2,7 @@
 title: 'Toyota Supra 2026'
 description: 'El regreso del famoso japonés con más potencia  y tecnología.'
 pubDate: 'Sep 24 2026'
-heroImage: '/blog-placeholder-1.jpg'
+heroImage: ''
 ---
 
 La Toyota Supra 2026 representa la evolución de uno de los autos deportivos más icónicos de la historia. Con un diseño que combina la herencia de la Supra original con tecnología moderna, este auto es una declaración de intenciones de Toyota en el segmento deportivo.
