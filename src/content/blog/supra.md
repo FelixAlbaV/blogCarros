@@ -1,6 +1,7 @@
 ---
 title: 'Toyota Supra 2026'
 description: 'El regreso del famoso japonés con más potencia  y tecnología.'
+author: 'Christopher'
 pubDate: 'Sep 24 2026'
 heroImage: ''
 ---

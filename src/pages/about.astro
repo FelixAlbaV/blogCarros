@@ -1,35 +1,20 @@
 ---
-import Layout from '../layouts/BlogPost.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const pageTitle = 'Sobre este blog';
+const description = 'Un blog dedicado a los autos deportivos más emocionantes del mundo';
 
 const habilidades = ['Autos deportivos', 'Motores turbo', 'Diseño automotriz', 'Velocidad'];
 const feliz = true;
 const terminado = false;
 const meta = 3;
+
+const colorHabilidad = 'navy';
+const pesoHabilidad = 'bold';
+const mayusculas = 'uppercase';
 ---
 
-<style>
-  .habilidades {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-    margin-top: 1rem;
-  }
-
-  .habilidades li {
-    background-color: #f0f0f0;
-    border-radius: 4px;
-    padding: 0.25rem 0.75rem;
-    font-size: 0.9rem;
-  }
-</style>
-
-<Layout
-  title="Sobre este blog"
-  description="Un blog dedicado a los autos deportivos más emocionantes del mundo"
-  pubDate={new Date('September 24 2026')}
->
+<BaseLayout pageTitle={pageTitle} description={description}>
   <p>
     Bienvenido a Blog de Autos, un espacio dedicado a los apasionados de los vehículos de alto rendimiento.
     Aquí encontrarás reseñas detalladas, especificaciones técnicas y todo lo que necesitas saber sobre
@@ -47,7 +32,35 @@ const meta = 3;
     {habilidades.map(h => <li>{h}</li>)}
   </ul>
 
-  {feliz && <p>¡Estoy feliz de aprender Astro!</p>}
-  {terminado && <p>¡Terminé el tutorial!</p>}
-  {meta === 3 ? <p>Mi meta es terminar en 3 días.</p> : <p>Mi meta no es 3 días.</p>}
-</Layout>
+  {feliz && <p>Me gustan los carros que te hacen sentir la diversión.</p>}
+  {terminado && <p>Los autos cómodos/comerciales son los mejores.</p>}
+  {meta === 3 ? <p>Autos para gente purista: hacer cambios y ser uno entre el auto y el conductor.</p> : <p>Mi meta no es 3 días.</p>}
+</BaseLayout>
+
+<style is:global define:vars={{ colorHabilidad, pesoHabilidad, mayusculas }}>
+  /* is:global: el <h1> lo genera BaseLayout, así que un estilo scoped no lo alcanzaría.
+     Como este <style> está en about.astro, solo se carga en esta página. */
+  h1 {
+    color: #c01a26;
+    font-size: 4rem;
+  }
+
+  .habilidades {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+
+  .habilidades li {
+    background-color: #f0f0f0;
+    border-radius: 4px;
+    padding: 0.25rem 0.75rem;
+    font-size: 0.9rem;
+    color: var(--colorHabilidad);
+    font-weight: var(--pesoHabilidad);
+    text-transform: var(--mayusculas);
+  }
+</style>

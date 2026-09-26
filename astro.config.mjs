@@ -6,7 +6,7 @@ import { defineConfig, fontProviders } from 'astro/config';
 
 // https://astro.build/config
 export default defineConfig({
-	site: 'https://example.com',
+	site: 'https://splendid-fudge-949634.netlify.app',
 	integrations: [mdx(), sitemap()],
 	fonts: [
 		{

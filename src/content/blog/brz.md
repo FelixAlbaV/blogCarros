@@ -1,6 +1,7 @@
 ---
 title: 'Subaru BRZ MT 2026'
 description: 'El deportivo puro de tracción trasera que pone la diversión al volante por encima de todo.'
+author: 'Christopher'
 pubDate: 'Sep 24 2026'
 heroImage: ''
 ---

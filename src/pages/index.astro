@@ -1,36 +1,23 @@
 ---
-import BaseHead from '../components/BaseHead.astro';
-import Footer from '../components/Footer.astro';
-import Header from '../components/Header.astro';
-import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
+import BaseLayout from '../layouts/BaseLayout.astro';
 
+const pageTitle = '🚗 Bienvenido a Blog de Autos';
 const nombre = 'Christopher';
 const fechaActual = new Date().toLocaleDateString('es-MX', { year: 'numeric', month: 'long', day: 'numeric' });
 ---
 
-<!doctype html>
-<html lang="es">
-	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-	</head>
-	<body>
-		<Header />
-		<main>
-			<h1>🚗 Bienvenido a Blog de Autos</h1>
-			<p>Escrito por <strong>{nombre}</strong> — {fechaActual}</p>
-			<p>
-				Un espacio dedicado a los autos deportivos más emocionantes del mundo.
-				Aquí encontrarás análisis, especificaciones y todo lo que necesitas saber
-				sobre los mejores vehículos de alto rendimiento.
-			</p>
-			<p>
-				Explora nuestras reseñas de autos como el <strong>Toyota Supra 2026</strong>,
-				el <strong>Porsche 911 Turbo S 2026</strong> y el <strong>Subaru BRZ MT 2026</strong>.
-			</p>
-			<p>
-				<a href="/blog">Ver todos los artículos →</a>
-			</p>
-		</main>
-		<Footer />
-	</body>
-</html>
+<BaseLayout pageTitle={pageTitle}>
+	<p>Escrito por <strong>{nombre}</strong> — {fechaActual}</p>
+	<p>
+		Un espacio dedicado a los autos deportivos más emocionantes del mundo.
+		Aquí encontrarás análisis, especificaciones y todo lo que necesitas saber
+		sobre los mejores vehículos de alto rendimiento.
+	</p>
+	<p>
+		Explora nuestras reseñas de autos como el <strong>Toyota Supra 2026</strong>,
+		el <strong>Porsche 911 Turbo S 2026</strong> y el <strong>Subaru BRZ MT 2026</strong>.
+	</p>
+	<p>
+		<a href="/blog">Ver todos los artículos →</a>
+	</p>
+</BaseLayout>

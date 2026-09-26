@@ -1,6 +1,7 @@
 ---
 title: 'Porsche 911 Turbo S 2026'
 description: 'El deportivo más refinado del mundo, muy elegante y tecnológico.'
+author: 'Christopher'
 pubDate: 'Sep 24 2026'
 heroImage: ''
 ---
