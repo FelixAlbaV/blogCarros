@@ -1,4 +1,5 @@
 ---
+import { Image } from 'astro:assets';
 import FormattedDate from '../components/FormattedDate.astro';
 import BaseLayout from './BaseLayout.astro';
 
@@ -13,6 +14,13 @@ const { frontmatter } = Astro.props;
 
 	{frontmatter.image?.url && <img src={frontmatter.image.url} width="300" alt={frontmatter.image.alt} />}
 
+	{frontmatter.heroImage && (
+		<figure class="foto-auto">
+			<Image src={frontmatter.heroImage} width={1020} alt={frontmatter.title} />
+			{frontmatter.heroImageCredit && <figcaption>{frontmatter.heroImageCredit}</figcaption>}
+		</figure>
+	)}
+
 	{frontmatter.tags && (
 		<div class="tags">
 			{frontmatter.tags.map((tag: string) => (
@@ -25,6 +33,19 @@ const { frontmatter } = Astro.props;
 </BaseLayout>
 
 <style>
+	.foto-auto {
+		margin: 1.5em 0;
+	}
+	.foto-auto img {
+		width: 100%;
+		height: auto;
+		border-radius: 12px;
+	}
+	.foto-auto figcaption {
+		font-size: 0.75em;
+		opacity: 0.7;
+		margin-top: 0.25em;
+	}
 	a {
 		color: #00539F;
 	}
