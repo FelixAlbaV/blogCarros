@@ -1,4 +1,5 @@
 ---
+import Greeting from '../components/Greeting';
 import BaseLayout from '../layouts/BaseLayout.astro';
 
 const pageTitle = '🚗 Bienvenido a Blog de Autos';
@@ -8,6 +9,7 @@ const fechaActual = new Date().toLocaleDateString('es-MX', { year: 'numeric', mo
 
 <BaseLayout pageTitle={pageTitle}>
 	<p>Escrito por <strong>{nombre}</strong> — {fechaActual}</p>
+	<Greeting client:load messages={["Hej", "Hallo", "Hola", "Habari"]} />
 	<p>
 		Un espacio dedicado a los autos deportivos más emocionantes del mundo.
 		Aquí encontrarás análisis, especificaciones y todo lo que necesitas saber

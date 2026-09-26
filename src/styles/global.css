@@ -217,3 +217,68 @@ h1 {
 		display: none;
 	}
 }
+
+/* modo oscuro (tutorial de Astro, paso 6.2) */
+
+html.dark {
+	background-color: #0d0950;
+	color: #fff;
+}
+
+.dark .menu {
+	background-color: #fff;
+	color: #000;
+}
+
+.dark .nav-links a:hover,
+.dark .nav-links a:focus {
+	color: #0d0950;
+}
+
+.dark .nav-links a {
+	color: #fff;
+}
+
+.dark a {
+	color: #ff9776;
+}
+
+/* ajustes extra: colores fijos de la plantilla de blog que no cambiaban solos */
+
+html.dark body,
+html.dark h1,
+html.dark h2,
+html.dark h3,
+html.dark h4,
+html.dark h5,
+html.dark h6,
+html.dark .title {
+	color: #fff;
+}
+
+html.dark header {
+	background: #0d0950;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 40%);
+}
+
+html.dark footer {
+	background: none;
+	color: #cbd5e1;
+}
+
+html.dark footer a {
+	color: #fff;
+}
+
+html.dark .date {
+	color: #cbd5e1;
+}
+
+html.dark code {
+	background-color: #1e1b4b;
+}
+
+/* las etiquetas conservan su fondo claro, así que su texto debe seguir oscuro */
+html.dark .tag a {
+	color: #00539F;
+}

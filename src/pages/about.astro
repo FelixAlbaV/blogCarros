@@ -6,7 +6,7 @@ const description = 'Un blog dedicado a los autos deportivos más emocionantes d
 
 const habilidades = ['Autos deportivos', 'Motores turbo', 'Diseño automotriz', 'Velocidad'];
 const feliz = true;
-const terminado = false;
+const terminado = true;
 const meta = 3;
 
 const colorHabilidad = 'navy';
@@ -33,7 +33,7 @@ const mayusculas = 'uppercase';
   </ul>
 
   {feliz && <p>Me gustan los carros que te hacen sentir la diversión.</p>}
-  {terminado && <p>Los autos cómodos/comerciales son los mejores.</p>}
+  {terminado && <p>¡Terminé el tutorial! Espero que tengas referencias de los mejores carros para diversión, con buena relación calidad-precio.</p>}
   {meta === 3 ? <p>Autos para gente purista: hacer cambios y ser uno entre el auto y el conductor.</p> : <p>Mi meta no es 3 días.</p>}
 </BaseLayout>
 
